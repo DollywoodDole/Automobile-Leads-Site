@@ -7,7 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('path-to-your-background-image'); /* Replace with actual image path */
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,23 +18,29 @@
             height: 100vh;
         }
         .lead-form {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 320px;
+        }
+        .lead-form h2 {
+            text-align: center;
+            color: #333;
         }
         .lead-form input, .lead-form button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border: 1px solid #ddd;
             border-radius: 5px;
+            box-sizing: border-box;
         }
         .lead-form button {
             background-color: #28a745;
             color: white;
             cursor: pointer;
+            border: none;
         }
         .lead-form button:hover {
             background-color: #218838;
@@ -40,7 +48,7 @@
     </style>
 </head>
 <body>
-    <form class="lead-form" action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+    <form class="lead-form" action="https://formspree.io/f/mqazvkyd" method="POST">
         <h2>Get Automobile Deals</h2>
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Email" required>
